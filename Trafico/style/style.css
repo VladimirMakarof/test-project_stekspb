@@ -7,8 +7,8 @@
 
 @font-face {
   font-family: "Rubik";
-  src: url("/fonts/rubik-v14-latin-700.woff2") format("woff2"),
-    url("/fonts/rubik-v14-latin-700.woff") format("woff");
+  src: url("../fonts/rubik-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/rubik-v14-latin-700.woff") format("woff");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -16,8 +16,8 @@
 
 @font-face {
   font-family: "Rubik";
-  src: url("/fonts/rubik-v14-latin-500.woff2") format("woff2"),
-    url("/fonts/rubik-v14-latin-500.woff") format("woff");
+  src: url("../fonts/rubik-v14-latin-500.woff2") format("woff2"),
+    url("../fonts/rubik-v14-latin-500.woff") format("woff");
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -25,8 +25,8 @@
 
 @font-face {
   font-family: "Rubik";
-  src: url("/fonts/rubik-v14-latin-regular.woff2") format("woff2"),
-    url("./fonts/rubik-v14-latin-regular.woff") format("woff");
+  src: url("../fonts/rubik-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/rubik-v14-latin-regular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -34,8 +34,8 @@
 
 @font-face {
   font-family: "Rubik";
-  src: url("/fonts/rubik-v14-latin-300.woff2") format("woff2"),
-    url("/fonts/rubik-v14-latin-300.woff") format("woff");
+  src: url("../fonts/rubik-v14-latin-300.woff2") format("woff2"),
+    url("../fonts/rubik-v14-latin-300.woff") format("woff");
   font-display: swap;
   font-weight: 300;
   font-style: normal;
@@ -43,14 +43,13 @@
 
 @font-face {
   font-family: "DM Serif Display";
-  src: url("/fonts/dm-serif-display-v5-latin-regular.woff2") format("woff2"),
-    url("/fonts/dm-serif-display-v5-latin-regular.woff") format("woff");
+  src: url("../fonts/dm-serif-display-v5-latin-regular.woff2") format("woff2"),
+    url("../fonts/dm-serif-display-v5-latin-regular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
-/* START default css settings */
 html {
   box-sizing: border-box;
 }
@@ -84,13 +83,9 @@ p {
   padding: 0;
 }
 
-/* img {
-  max-width: 100%;
-} */
-
 a {
   text-decoration: none;
-  color: var(--color-white); /*можно color: inherit*/
+  color: var(--color-white);
   opacity: 1;
   transition: opacity 0.3s;
   cursor: pointer;
@@ -139,7 +134,6 @@ a:hover {
   outline: none;
 }
 
-/* END default css settings */
 .header {
   position: absolute;
   left: 0;
@@ -206,7 +200,7 @@ a:hover {
 }
 
 .hero-bg {
-  background-image: url("/img/hero-bg.png");
+  background-image: url("../img/hero-bg.png");
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -232,7 +226,7 @@ a:hover {
 
 .hero__link {
   padding: 20px 78px 20px 24px;
-  background-image: url("/img/Union.png");
+  background-image: url("../img/Union.png");
   background-position: 150px center;
   background-size: 30px 13px;
   background-repeat: no-repeat;
@@ -341,11 +335,6 @@ a:hover {
   top: 2px;
   right: -71px;
 }
-/* .faq-bg {
-  background-color: #fdede8;
-  width:1200px;
-  border-top-right-radius: 90px;
- } */
 
 .faq__left {
   max-width: 50%;
@@ -374,8 +363,6 @@ a:hover {
   margin-right: 30px;
 }
 .faq__accordion {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
   column-gap: 20px;
   padding-top: 90px;
   padding-bottom: 100px;
@@ -401,7 +388,6 @@ a:hover {
   justify-content: space-between;
   list-style: none;
   min-height: 90px;
-  /* padding: 0 35px; */
   background-color: var(--color-white);
   border-radius: 10px;
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
@@ -515,7 +501,7 @@ a:hover {
 
 .footer-bg::before {
   content: "";
-  background-image: url("/img/footer-bg.png");
+  background-image: url("../img/footer-bg.png");
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -544,7 +530,7 @@ a:hover {
 .footer__btn {
   color: var(--color-white);
   padding: 20px 78px 20px 24px;
-  background-image: url("/img/Union.png");
+  background-image: url("../img/Union.png");
   background-position: 150px center;
   background-size: 30px 13px;
   background-repeat: no-repeat;
@@ -628,15 +614,15 @@ input::-webkit-input-placeholder {
 }
 
 .fb {
-  background-image: url("/img/fb.svg");
+  background-image: url("../img/fb.svg");
 }
 
 .tw {
-  background-image: url("/img/tw.svg");
+  background-image: url("../img/tw.svg");
 }
 
 .inst {
-  background-image: url("/img/inst.svg");
+  background-image: url("../img/inst.svg");
 }
 
 .reviews__left {
@@ -660,7 +646,7 @@ input::-webkit-input-placeholder {
   height: 360px;
 }
 .preview {
-  background-image: url("/img/next.png");
+  background-image: url("../img/next.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -672,7 +658,7 @@ input::-webkit-input-placeholder {
   cursor: pointer;
 }
 .next {
-  background-image: url("/img/next.png");
+  background-image: url("../img/next.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -732,13 +718,13 @@ input::-webkit-input-placeholder {
 }
 
 .person1 {
-  background-image: url("/img/avatar-1.jpg");
+  background-image: url("../img/avatar-1.jpg");
 }
 .person2 {
-  background-image: url("/img/avatar-2.jpg");
+  background-image: url("../img/avatar-2.jpg");
 }
 .person3 {
-  background-image: url("/img/avatar-3.jpg");
+  background-image: url("../img/avatar-3.jpg");
 }
 
 .review__title {
@@ -770,20 +756,20 @@ input::-webkit-input-placeholder {
   }
 
   .about__left {
-    text-align: center; /* Центрируем текст по горизонтали */
-    max-width: 100%; /* Убираем ограничение по ширине */
-    margin: 0 auto; /* Центрируем блок по горизонтали */
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .about__descr {
-    max-width: 100%; /* Убираем ограничение по ширине */
-    margin: 0 auto 30px auto; /* Центрируем блок по горизонтали и добавляем отступ снизу */
+    max-width: 100%;
+    margin: 0 auto 30px auto;
   }
 
   .about__banner {
-    width: 100%; /* Делаем баннер на всю ширину блока */
-    max-width: 400px; /* Ограничиваем максимальную ширину баннера */
-    margin: 0 auto 30px auto; /* Центрируем блок по горизонтали и добавляем отступ снизу */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
     background-color: var(--bg-color);
     border-left: none;
   }
