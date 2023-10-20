@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS gallery_app;
+CREATE TABLE IF NOT EXISTS galleries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    gallery_id INT NOT NULL,
+    filename VARCHAR(255) NOT NULL,
+    FOREIGN KEY (gallery_id) REFERENCES galleries(id)
+);
+SHOW TABLES;
+SELECT * FROM galleries;
+ALTER TABLE galleries ADD COLUMN preview_image_id INT;
+ALTER TABLE galleries ADD CONSTRAINT FK_gallery_preview_image FOREIGN KEY (preview_image_id) REFERENCES images(id);
+
+DELETE FROM images WHERE id = 2;
